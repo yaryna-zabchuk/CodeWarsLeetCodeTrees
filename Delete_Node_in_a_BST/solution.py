@@ -1,13 +1,21 @@
+'''
+Solution for LeetCode problem 450: Delete Node in a BST
+https://leetcode.com/problems/delete-node-in-a-bst/description/
+'''
+
 from collections import deque
 
 class TreeNode:
+    '''Node class for binary tree'''
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
 class Solution:
+    '''Solution class for deleting a node in a binary search tree'''
     def deleteNode(self, root, key):
+        '''Delete a node from a binary search tree'''
         cur = root
         parent = None
 

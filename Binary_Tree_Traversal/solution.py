@@ -1,6 +1,11 @@
+'''
+Binary Tree Traversal
+https://www.codewars.com/kata/5268956c10342831a8000135/train/python
+'''
 from collections import deque
 
 class Node:
+    '''Node class for binary tree'''
     def __init__(self, data, lefy=None, right=None):
         self.data = data
         self.left = lefy
@@ -8,6 +13,7 @@ class Node:
 
 # Pre-order traversal
 def pre_order(node):
+    '''Pre-order traversal of a binary tree using stack'''
     stack = deque()
     cur = node
     res = []
@@ -24,6 +30,7 @@ def pre_order(node):
 
 # In-order traversal
 def in_order(node):
+    '''In-order traversal of a binary tree using stack'''
     stack = deque()
     res = []
     cur = node
@@ -42,6 +49,7 @@ def in_order(node):
 
 # Post-order traversal
 def post_order(node):
+    '''Post-order traversal of a binary tree using stack'''
     stack = deque()
     res = []
     cur = node
